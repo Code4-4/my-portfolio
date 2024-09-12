@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roblox Programmer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABEFJREFUWEfFl1lIXVcUhj+tRSpiBStY8KEoFbFxaq0TKqHOGgX1RQUfoo2CDwW1oDiBI3EoQh1ArUoEFZ/El2JN1JiYgtYhahVpDfRFFGmhJg5glbRrx3s53nOv2NZw19s5+99r/Xuvtf69tw3Xt/eBJOALIBD4CHC+mP4n8BuwAkwD3wMH13Ftcw2QF1AKZAHvXQMvkBNg5B98E/DLVXOuIiDB6oCvgHevGdgU9hfwLVB1QUrnxhKBj4Ex4JP/GNh02gaQBvxqOmCOwKfAD8AHNxTc4OZ3IB5Y1vo1JSAr//EtBNeSCNfuhJaA5PynG9x2Sxso6fjcUBNaAq1AyQ1vuyV33wBfy6CBgLTaz/+j2v8tb+mOW9KiBgJ9QK4lL/b29ty5cwdfX1/29/cZGhri4OAANzc39vb2Lk1zcHAgJSUFHx8fdnZ2GB4e5vDw0By2H8gTAqJwu5ZExs/Pj9bWVpqbm1lYWCAwMJC6ujru379PVFQUZWVlRgIhISHU1NTQ2NjI8+fPCQ0NpbKykoaGBiIiIqiqEjkwmojVh0JAFG7Y3Opl5WtrayQlJfHixQsjREitrKyo4C0tLeq/k5MTy8vLREZGsrsr63lj8v3kyRPy8/Pp7e01DZMtBOTvl+YIZGRkcO/ePRISEnTDz549o7y8nNnZWTWWl5dHbGwsmZmZOuzGxgbZ2dmsrq6ajn0nBBaBz8wRqK+v5/bt22oVr1+/vgTp6OhQOyD5FWtvb8fDw4Pk5GSdq76+PgoKCjg7OzMdWxIColAu5ggUFhbS2dnJ48ePVR4fPXpkhHl7e7O1tWX8lt0QzMTEhKqBp0+fWsRqYv0hBITWO+YISEU/fPiQ8HARL1hfX6etrU11wenp6aUpzs7OzMzMEBAQoP4vLi4q7OjoKOfn5+bcy79ziwQk+PHxMXZ2duTk5FBcXMytW9K6b5xLao6OjtS3AStFe/fuXYqKivDyEmlB1UhcXJyO8AUjRcBsCqqrq6mtrTUyt7GxUY6kLoKCgsjNzWVgYECNS3tJaxrM1tZW6YZgRTvS09MZG5PDVWcqBWaLcGpqiujoaN0MWeXm5iY9PT00Ncl9A1UbMTExOqyjo6NqX1lMd3e3OQKqCHVt6OLiohTP3d39Uk8bPCwtLSEFOj8/j6enpyLk6urKy5cvdUG2t7fVbmgLVgNSbagTIpHS8fFxpX5apZOJwcHBlJaWIhohJvXx4MEDpQmijloTXcjKylLpsmBKiHRSXFFRwcjIiFK5ubk5tX2S18TEROLj41WRvXr1SvkU6e3v76erq0uRHhwcRNKUmppKWFgYJSUlnJyI6urMKMUycukw8vf3N6qWCIuh4qenp5Wsas2AlSJNS0tTLSsH1eTkpErRFWY8jARj9eNYSFj1QiIErH4lExJWvZQa6sWq13IDCas+TAwkrPo007av1R6nphryVp7nfwPoC5KeajsqgwAAAABJRU5ErkJggg==" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #121212;
             color: #e0e0e0;
+            line-height: 1.6;
         }
         header {
             padding: 20px;
@@ -21,32 +23,59 @@
         header h1 {
             margin: 0;
             color: #ffffff;
+            font-size: 2.5em;
+        }
+        header p {
+            margin-top: 10px;
+            color: #cfcfcf;
         }
         nav {
             display: flex;
             justify-content: center;
             padding: 10px 0;
             background-color: #1f1f1f;
+            border-bottom: 2px solid #333;
         }
         nav a {
             color: #e0e0e0;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #90caf9;
         }
         section {
             padding: 40px 20px;
             max-width: 900px;
             margin: auto;
         }
-        h2 {
-            border-bottom: 2px solid #3a3a3a;
+        section h2 {
+            color: #ffffff;
+            border-bottom: 2px solid #333;
             padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2em;
         }
-        .social-links a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #e0e0e0;
+        .project-item, .skill-item {
+            background-color: #1f1f1f;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .project-item h3 {
+            margin-top: 0;
+            color: #ffffff;
+            font-size: 1.5em;
+        }
+        .project-item p {
+            margin: 10px 0;
+            color: #cfcfcf;
+        }
+        .skill-item {
+            margin-bottom: 10px;
+            color: #cfcfcf;
         }
         footer {
             text-align: center;
@@ -54,25 +83,19 @@
             background-color: #1f1f1f;
             color: #888;
         }
-        .project-item, .skill-item, .contact-item {
-            margin-bottom: 15px;
-            padding: 15px;
-            background-color: #1e1e1e;
-            border-radius: 5px;
+        footer a {
+            color: #90caf9;
+            text-decoration: none;
         }
-        .project-item h3 {
-            color: #ffd700;
-        }
-        p {
-            line-height: 1.6;
-            margin-bottom: 15px;
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Code4 - Roblox Programmer</h1>
+    <h1>ScriptShogun - Roblox Programmer</h1>
     <p>Creating immersive experiences on the Roblox platform.</p>
 </header>
 
@@ -98,35 +121,27 @@
         <p>An adventurous dungeon crawler game with randomized levels and unique enemy encounters. Designed to challenge players with dynamic gameplay and strategic elements.</p>
         <p><strong>Technologies:</strong> Lua, Roblox Studio, Randomized Level Generation</p>
         <p><strong>Role:</strong> Lead Developer, Scripter</p>
-    
     </div>
     <div class="project-item">
         <h3>Fantasy Arena Battle</h3>
         <p>A fast-paced, strategic battle game set in a fantasy arena with customizable characters, various game modes, and unique arenas. Focuses on player skill and tactical decision-making.</p>
         <p><strong>Technologies:</strong> Lua, Roblox Studio, Game Design</p>
         <p><strong>Role:</strong> Game Designer, Scripter</p>
-     
     </div>
-  
 </section>
 
 <section id="skills">
     <h2>Skills</h2>
     <div class="skill-item"><strong>Lua Scripting:</strong> Proficient in writing scripts for game mechanics, UI, and gameplay logic.</div>
     <div class="skill-item"><strong>Roblox Studio:</strong> Expertise in using Roblox Studio for game development, including terrain design, asset management, and physics.</div>
-    <div class="skill-item"><strong>Game Design:</strong> Experience in designing engaging and balanced gameplay experiences.</div>   
-</section>
-
-<section id="contact">
-    <h2>Contact Information</h2>
-    <div class="contact-item">
-        <p>Roblox: <a href="mailto:https://www.roblox.com/users/7333476730/profile">ScriptShogun</a></p>
-         <p>Email: <a href="mailto:scriptshogun@yahoo.com">scriptshogun@yahoo.com</a></p>
-    </div>
+    <div class="skill-item"><strong>Game Design:</strong> Skilled in designing game mechanics, levels, and balancing gameplay for optimal player experience.</div>
+    <div class="skill-item"><strong>Problem Solving:</strong> Strong analytical skills for debugging and optimizing game performance.</div>
 </section>
 
 <footer>
-    <p>&copy; 2024 ScriptShogun. All rights reserved. | Built with passion for Roblox development.</p>
+    <p>Contact me at <a href="mailto:your.email@example.com">scriptshogun@yahoo.com</a></p>
+    
+    </div>
 </footer>
 
 </body>
