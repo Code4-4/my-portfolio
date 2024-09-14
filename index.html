@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of ScriptShogun, a Roblox programmer specializing in immersive game experiences.">
+    <meta name="keywords" content="Roblox, Programmer, Game Development, Lua Scripting, Game Design">
+    <meta name="author" content="ScriptShogun">
     <title>Roblox Programmer Portfolio</title>
     <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABEFJREFUWEfFl1lIXVcUhj+tRSpiBStY8KEoFbFxaq0TKqHOGgX1RQUfoo2CDwW1oDiBI3EoQh1ArUoEFZ/El2JN1JiYgtYhahVpDfRFFGmhJg5glbRrx3s53nOv2NZw19s5+99r/Xuvtf69tw3Xt/eBJOALIBD4CHC+mP4n8BuwAkwD3wMH13Ftcw2QF1AKZAHvXQMvkBNg5B98E/DLVXOuIiDB6oCvgHevGdgU9hfwLVB1QUrnxhKBj4Ex4JP/GNh02gaQBvxqOmCOwKfAD8AHNxTc4OZ3IB5Y1vo1JSAr//EtBNeSCNfuhJaA5PynG9x2Sxso6fjcUBNaAq1AyQ1vuyV33wBfy6CBgLTaz/+j2v8tb+mOW9KiBgJ9QK4lL/b29ty5cwdfX1/29/cZGhri4OAANzc39vb2Lk1zcHAgJSUFHx8fdnZ2GB4e5vDw0By2H8gTAqJwu5ZExs/Pj9bWVpqbm1lYWCAwMJC6ujru379PVFQUZWVlRgIhISHU1NTQ2NjI8+fPCQ0NpbKykoaGBiIiIqiqEjkwmojVh0JAFG7Y3Opl5WtrayQlJfHixQsjREitrKyo4C0tLeq/k5MTy8vLREZGsrsr63lj8v3kyRPy8/Pp7e01DZMtBOTvl+YIZGRkcO/ePRISEnTDz549o7y8nNnZWTWWl5dHbGwsmZmZOuzGxgbZ2dmsrq6ajn0nBBaBz8wRqK+v5/bt22oVr1+/vgTp6OhQOyD5FWtvb8fDw4Pk5GSdq76+PgoKCjg7OzMdWxIColAu5ggUFhbS2dnJ48ePVR4fPXpkhHl7e7O1tWX8lt0QzMTEhKqBp0+fWsRqYv0hBITWO+YISEU/fPiQ8HARL1hfX6etrU11wenp6aUpzs7OzMzMEBAQoP4vLi4q7OjoKOfn5+bcy79ziwQk+PHxMXZ2duTk5FBcXMytW9K6b5xLao6OjtS3AStFe/fuXYqKivDyEmlB1UhcXJyO8AUjRcBsCqqrq6mtrTUyt7GxUY6kLoKCgsjNzWVgYECNS3tJaxrM1tZW6YZgRTvS09MZG5PDVWcqBWaLcGpqiujoaN0MWeXm5iY9PT00Ncl9A1UbMTExOqyjo6NqX1lMd3e3OQKqCHVt6OLiohTP3d39Uk8bPCwtLSEFOj8/j6enpyLk6urKy5cvdUG2t7fVbmgLVgNSbagTIpHS8fFxpX5apZOJwcHBlJaWIhohJvXx4MEDpQmijloTXcjKylLpsmBKiHRSXFFRwcjIiFK5ubk5tX2S18TEROLj41WRvXr1SvkU6e3v76erq0uRHhwcRNKUmppKWFgYJSUlnJyI6urMKMUycukw8vf3N6qWCIuh4qenp5Wsas2AlSJNS0tTLSsH1eTkpErRFWY8jARj9eNYSFj1QiIErH4lExJWvZQa6sWq13IDCas+TAwkrPo007av1R6nphryVp7nfwPoC5KeajsqgwAAAABJRU5ErkJggg==" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -16,13 +19,16 @@
             line-height: 1.6;
         }
         header {
-            padding: 20px;
+            padding: 0;
             text-align: center;
-            background-color: #1f1f1f;
+        }
+        .hero {
+            background: url('your-image-url.jpg') no-repeat center center/cover;
+            padding: 60px 20px;
+            color: #ffffff;
         }
         header h1 {
             margin: 0;
-            color: #ffffff;
             font-size: 2.5em;
         }
         header p {
@@ -57,25 +63,36 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
             font-size: 2em;
+            font-weight: 700;
         }
-        .project-item, .skill-item {
+        .project-item {
             background-color: #1f1f1f;
             padding: 15px;
             margin-bottom: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .project-item:hover {
+            transform: scale(1.02);
+        }
+        .project-item img {
+            width: 100%;
             border-radius: 5px;
         }
         .project-item h3 {
             margin-top: 0;
             color: #ffffff;
-            font-size: 1.5em;
-        }
-        .project-item p {
-            margin: 10px 0;
-            color: #cfcfcf;
+            font-size: 1.75em;
         }
         .skill-item {
-            margin-bottom: 10px;
-            color: #cfcfcf;
+            background: #2c2c2c;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.25em;
+            transition: background 0.3s;
+        }
+        .skill-item:hover {
+            background: #3c3c3c;
         }
         footer {
             text-align: center;
@@ -90,13 +107,37 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .social-links a {
+            margin: 0 10px;
+            color: #90caf9;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+            section h2 {
+                font-size: 1.5em;
+            }
+            .project-item, .skill-item {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>ScriptShogun - Roblox Programmer</h1>
-    <p>Creating immersive experiences on the Roblox platform.</p>
+    <div class="hero">
+        <h1>ScriptShogun - Roblox Programmer</h1>
+        <p>Creating immersive experiences on the Roblox platform.</p>
+    </div>
 </header>
 
 <nav>
@@ -108,18 +149,15 @@
 
 <section id="about">
     <h2>About Me</h2>
-    <p>I’m a dedicated Roblox developer with a passion for creating immersive and interactive experiences on the Roblox platform. With expertise in Lua scripting and game design, I specialize in building engaging games that captivate players and foster creativity. My goal is to push the boundaries of what’s possible in Roblox development and deliver high-quality, enjoyable content for players of all ages.</p>
+    <p>Hi, I'm ScriptShogun, a passionate Roblox programmer with a focus on creating engaging and immersive game experiences. With a background in Lua scripting and game design, I strive to bring unique concepts to life on the Roblox platform.</p>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
     <div class="project-item">
+        <img src="fantasy-arena-battle-icon.jpg" alt="Fantasy Arena Battle">
         <h3>Fantasy Arena Battle</h3>
         <p>A fast-paced, strategic battle game set in a fantasy world. Customize your character, choose your game mode, and battle it out in unique arenas. Features leaderboards and various customization options.</p>
-    </div>
-    <div class="project-item">
-        <h3>Dungeon Crawler</h3>
-        <p>An exciting dungeon crawler game with randomized levels. Explore, fight monsters, and collect treasures in a procedurally generated dungeon filled with surprises.</p>
     </div>
 </section>
 
@@ -127,13 +165,16 @@
     <h2>Skills</h2>
     <div class="skill-item">Roblox Lua Scripting</div>
     <div class="skill-item">Game Design</div>
-    <div class="skill-item">UI/UX Design</div>
-    <div class="skill-item">Data Management</div>
+    <div class="skill-item">3D Modeling</div>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
     <p>If you’d like to get in touch, feel free to reach out via <a href="mailto:scriptshogun@example.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/scriptshogun" target="_blank">LinkedIn</a>.</p>
+    <div class="social-links">
+        <a href="https://www.roblox.com/users/7333476730/profile" target="_blank">Roblox</a>
+        <a href="https://discord.com/users/1284391297603473511" target="_blank">Script.shogun</a>
+    </div>
 </section>
 
 <footer>
